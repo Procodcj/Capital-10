@@ -1,0 +1,85 @@
+# ==========================================
+# 1. SCRIPTS Y LANZADORES LOCALES
+# ==========================================
+*.bat
+*.cmd
+*.ps1
+*.vbs
+*.lnk
+
+# ==========================================
+# 2. BASE DE DATOS LOCAL (SQLite)
+# ==========================================
+*.db
+*.sqlite
+*.sqlite3
+*.db-journal
+*.db-wal
+*.db-shm
+
+# ==========================================
+# 3. SECRETOS, CREDENCIALES Y LOGS
+# ==========================================
+.env
+*.env
+.env.*
+*.key
+*.pem
+*.crt
+*.log
+secrets.json
+config_local.py
+
+# ==========================================
+# 4. ENTORNOS VIRTUALES Y CACHÉ DE PYTHON
+# ==========================================
+.venv/
+env/
+venv/
+ENV/
+__pycache__/
+*.py[cod]
+*$py.class
+.Python
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# ==========================================
+# 5. COMPILACIONES Y EMPAQUETADOS (PyInstaller)
+# ==========================================
+build/
+dist/
+*.spec
+*.exe
+*.msi
+*.zip
+*.rar
+*.7z
+*.tar.gz
+
+# ==========================================
+# 6. VISUAL STUDIO CODE Y EDITORES
+# ==========================================
+.vscode/
+*.code-workspace
+.history/
+.idea/
+*.swp
+*.swo
+*~
+
+# ==========================================
+# 7. ARCHIVOS DEL SISTEMA WINDOWS
+# ==========================================
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+ehthumbs_vista.db
+Desktop.ini
+desktop.ini
+$RECYCLE.BIN/
+*.cab
+*.msm
+*.msp
+*.stackdump

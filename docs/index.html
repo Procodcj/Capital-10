@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Capital 10 - Gestión de Lectura</title>
+    <meta name="description" content="Aplicación portátil de escritorio para Windows enfocada en la gestión y seguimiento personal de hábitos de lectura, bitácora de notas, historial anual y exportación de resúmenes en PDF de forma 100% local.">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="hero">
+        <div class="container">
+            <div class="badge">Gestión de Lectura Local</div>
+            <h1>Capital 10</h1>
+            <p class="hero-subtitle">
+                Organiza tu biblioteca personal, mide tu progreso página a página, guarda notas clave por libro y exporta reportes ejecutivos en PDF de forma 100% local en Windows.
+            </p>
+            <div class="cta-group">
+                <a href="https://github.com/Procodcj/Capital-10/releases/latest/download/Capital.10.zip" class="btn btn-primary">
+                    ⬇ Descargar para Windows (Capital.10.zip)
+                </a>
+                <a href="https://github.com/Procodcj/Capital-10" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">
+                    Ver Repositorio en GitHub
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+        <!-- Sección de Interfaz -->
+        <section class="section" id="interfaz">
+            <div class="section-header">
+                <h2>Interfaz de la Aplicación</h2>
+                <p>Diseño oscuro, limpio y estructurado para llevar el control total de tus hábitos de lectura.</p>
+            </div>
+            <div class="grid-2">
+                <article class="card">
+                    <div class="card-img-wrapper">
+                        <img src="img/dashboard.png" alt="Dashboard de Lectura en Capital 10" loading="lazy">
+                    </div>
+                    <div class="card-body">
+                        <h3>Dashboard de Lectura</h3>
+                        <p>
+                            Panel principal con métricas globales en tiempo real (total de libros, completados, en lectura y páginas leídas), barras de progreso individual, cálculo automático de duración en días y gestión rápida para agregar, editar o eliminar libros.
+                        </p>
+                    </div>
+                </article>
+
+                <article class="card">
+                    <div class="card-img-wrapper">
+                        <img src="img/biblioteca.png" alt="Biblioteca de Lecturas en Capital 10" loading="lazy">
+                    </div>
+                    <div class="card-body">
+                        <h3>Biblioteca de Lecturas</h3>
+                        <p>
+                            Historial automático de todos los libros terminados al 100%, organizados cronológicamente en contenedores por año con el conteo de obras finalizadas, páginas acumuladas y el rango de fechas de inicio y término.
+                        </p>
+                    </div>
+                </article>
+
+                <article class="card">
+                    <div class="card-img-wrapper">
+                        <img src="img/notas_de_lectura.png" alt="Notas de Lectura en Capital 10" loading="lazy">
+                    </div>
+                    <div class="card-body">
+                        <h3>Notas de Lectura</h3>
+                        <p>
+                            Espacio dedicado para consultar, registrar y filtrar por libro los conceptos clave, capítulos, citas e ideas importantes que deseas conservar como referencia de cada lectura.
+                        </p>
+                    </div>
+                </article>
+
+                <article class="card">
+                    <div class="card-img-wrapper">
+                        <img src="img/Exportar_PDF.png" alt="Exportar Resúmenes PDF en Capital 10" loading="lazy">
+                    </div>
+                    <div class="card-body">
+                        <h3>Exportar Resúmenes PDF</h3>
+                        <p>
+                            Generación instantánea de reportes ejecutivos en formato PDF listos para imprimir o compartir, integrando estadísticas globales de avance, tabla de lecturas y todas las notas registradas por libro.
+                        </p>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- Sección de Instrucciones para Windows -->
+        <section class="section" id="instalacion">
+            <div class="section-header">
+                <h2>Instrucciones de Uso en Windows</h2>
+                <p>Capital 10 es completamente portátil y no requiere instalar Python ni configuraciones adicionales.</p>
+            </div>
+            <div class="steps-grid">
+                <div class="step-card">
+                    <span class="step-number">1</span>
+                    <h3>Descargar el paquete</h3>
+                    <p>Descarga el archivo comprimido <code>Capital.10.zip</code> desde el botón principal de descarga directa.</p>
+                </div>
+                <div class="step-card">
+                    <span class="step-number">2</span>
+                    <h3>Extraer la carpeta</h3>
+                    <p>Extrae todo el contenido en una carpeta de tu preferencia manteniendo siempre juntos el ejecutable <code>Capital 10.exe</code> y la carpeta <code>_internal</code>.</p>
+                </div>
+                <div class="step-card">
+                    <span class="step-number">3</span>
+                    <h3>Ejecutar Capital 10</h3>
+                    <p>Abre <code>Capital 10.exe</code> directamente. Si deseas un acceso directo en el Escritorio, créalo con clic derecho sin sacar el archivo <code>.exe</code> de su carpeta.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Bloque informativo de Windows SmartScreen -->
+        <section class="section" id="smartscreen">
+            <div class="smartscreen-box">
+                <div class="smartscreen-header">
+                    <h2>Aviso sobre Windows Defender SmartScreen</h2>
+                    <p>
+                        Al abrir <code>Capital 10.exe</code> por primera vez, es posible que Windows muestre una ventana preventiva de SmartScreen.
+                        Esto ocurre de forma habitual con aplicaciones independientes y de código abierto que no cuentan con un certificado comercial de firma digital de pago de Microsoft.
+                    </p>
+                    <p>Para ejecutar la aplicación con normalidad, sigue estos dos sencillos pasos:</p>
+                </div>
+
+                <div class="grid-2 smartscreen-steps">
+                    <div class="card">
+                        <div class="card-img-wrapper">
+                            <img src="img/moreInfo.png" alt="Paso 1: Hacer clic en More info en Windows SmartScreen" loading="lazy">
+                        </div>
+                        <div class="card-body">
+                            <h3>Paso 1: Haz clic en "More info" (Más información)</h3>
+                            <p>En la ventana emergente de Windows protected your PC, pulsa sobre el enlace subrayado <strong>More info</strong> o <strong>Más información</strong>.</p>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-img-wrapper">
+                            <img src="img/runAnyway.png" alt="Paso 2: Hacer clic en Run anyway en Windows SmartScreen" loading="lazy">
+                        </div>
+                        <div class="card-body">
+                            <h3>Paso 2: Haz clic en "Run anyway" (Ejecutar de todas formas)</h3>
+                            <p>Se desplegarán los detalles del ejecutable <code>Capital 10.exe</code>. Pulsa el botón <strong>Run anyway</strong> (<strong>Ejecutar de todas formas</strong>) en la parte inferior.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección de Almacenamiento, Privacidad y Términos -->
+        <section class="section" id="seguridad">
+            <div class="section-header">
+                <h2>Almacenamiento, Privacidad y Términos</h2>
+                <p>Principios de privacidad local y portabilidad bajo los cuales opera Capital 10.</p>
+            </div>
+            <div class="security-grid">
+                <div class="security-item">
+                    <h3>🔒 100% Local y Privado</h3>
+                    <p>
+                        Sin cuentas, sin suscripciones ni conexión a servidores externos. Toda tu biblioteca, estadísticas de avance y notas de lectura viven exclusivamente en tu computadora.
+                    </p>
+                </div>
+                <div class="security-item">
+                    <h3>🗄️ Base de Datos Portátil (<code>capital10.db</code>)</h3>
+                    <p>
+                        Tus libros y notas se guardan automáticamente en el archivo SQLite <code>capital10.db</code> junto al ejecutable, permitiéndote hacer copias de seguridad o migrar tus datos fácilmente al actualizar de versión.
+                    </p>
+                </div>
+                <div class="security-item">
+                    <h3>⚖️ Licencia MIT</h3>
+                    <p>
+                        Software libre y gratuito distribuido "tal cual" (<em>AS IS</em>), sin garantías de ningún tipo. El usuario es el único responsable de conservar y respaldar periódicamente su archivo <code>capital10.db</code>.
+                    </p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer-content">
+            <p>© 2026 <strong>Procodcj</strong>. Distribuido bajo Licencia MIT.</p>
+            <div class="footer-links">
+                <a href="https://github.com/Procodcj/Capital-10" target="_blank" rel="noopener noreferrer">Repositorio GitHub</a>
+                <span class="separator">•</span>
+                <a href="https://github.com/Procodcj/Capital-10/releases/latest/download/Capital.10.zip">Descargar Capital.10.zip</a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

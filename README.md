@@ -2,6 +2,9 @@
 
 Aplicación de escritorio para la gestión, registro y seguimiento de hábitos de lectura personal, desarrollada en Python con una interfaz gráfica basada en CustomTkinter y persistencia de datos local en SQLite.
 
+- **Página oficial y guía de uso:** [https://procodcj.github.io/Capital-10/](https://procodcj.github.io/Capital-10/)
+- **Descarga directa (Windows):** [Capital.10.zip (Última versión)](https://github.com/Procodcj/Capital-10/releases/latest/download/Capital.10.zip)
+
 ---
 
 ## Características
@@ -18,12 +21,13 @@ Aplicación de escritorio para la gestión, registro y seguimiento de hábitos d
 
 No se requiere tener Python instalado para usar la aplicación terminada:
 
-1. Ve a la sección de [Releases](https://github.com/Procodcj/Capital-10/releases) en este repositorio.
-2. Descarga el archivo comprimido más reciente (`Capital 10.zip`).
-3. Extrae la carpeta completa en la ubicación de tu preferencia.
+1. Ve a la sección de [Releases](https://github.com/Procodcj/Capital-10/releases) en este repositorio (o usa el enlace de [descarga directa](https://github.com/Procodcj/Capital-10/releases/latest/download/Capital.10.zip)).
+2. Descarga el archivo comprimido más reciente (`Capital.10.zip`).
+3. Extrae la carpeta completa en la ubicación de tu preferencia, manteniendo siempre juntos `Capital 10.exe` y la carpeta `_internal`.
 4. Ejecuta el archivo `Capital 10.exe`.
+5. Al abrirlo por primera vez, Windows Defender SmartScreen puede mostrar una advertencia por tratarse de una aplicación independiente sin firma comercial; consulta la guía visual paso a paso en [https://procodcj.github.io/Capital-10/#smartscreen](https://procodcj.github.io/Capital-10/#smartscreen).
 
-> **Nota para actualización de versión:** Si ya usabas la aplicación y quieres conservar tus libros y notas, copia tu archivo existente `capital10.db` y pégalo dentro de la nueva carpeta descomprimida, al lado de `Capital 10.exe`, antes de abrirlo.
+> **Nota para actualización de versión:** Si ya usabas la aplicación y quieres conservar tus libros y notas, copia tu archivo existente `capital10.db` y pégalo dentro de la nueva carpeta descomprimida, al lado de `Capital 10.exe`, antes de abrirlo. Si vienes de una versión anterior y no ves `capital10.db` en la carpeta principal, búscalo dentro de la carpeta `_internal`.
 
 ---
 
@@ -40,7 +44,7 @@ Para clonar y ejecutar el código fuente directamente desde la terminal:
 
 1. Clonar el repositorio:
    ```bash
-   git clone [https://github.com/Procodcj/Capital-10.git](https://github.com/Procodcj/Capital-10.git)
+   git clone https://github.com/Procodcj/Capital-10.git
    cd Capital-10
    ```
 
@@ -68,6 +72,7 @@ Para clonar y ejecutar el código fuente directamente desde la terminal:
 ```text
 Capital 10/
 ├── base_datos/        # Configuración de SQLite, esquema y migraciones
+├── docs/              # Página web de GitHub Pages (index.html, styles.css, img/)
 ├── modulos/           # Módulos de interfaz, lógica de vistas y navegación
 ├── LICENSE            # Licencia MIT
 ├── main.py            # Punto de entrada de la aplicación

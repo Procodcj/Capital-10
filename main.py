@@ -7,6 +7,12 @@ BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 if BASE_DIR not in sys.path:
     sys.path.insert(0, BASE_DIR)
 
+
+def obtener_ruta_recurso(ruta_relativa):
+    """Resuelve rutas de recursos tanto en ejecución directa como empaquetado con PyInstaller."""
+    base_path = getattr(sys, "_MEIPASS", BASE_DIR)
+    return os.path.join(base_path, ruta_relativa)
+
 from base_datos.conexion import inicializar_db
 from modulos.dashboard import DashboardFrame
 from modulos.biblioteca import BibliotecaFrame
@@ -121,6 +127,11 @@ class Capital10App(ctk.CTk):
         self.geometry("1120x680")
         self.minsize(980, 600)
 
+        ruta_icono = obtener_ruta_recurso("icono.ico")
+        if os.path.exists(ruta_icono):
+            self._aplicar_icono(ruta_icono)
+            self.after(200, lambda: self._aplicar_icono(ruta_icono))
+
         # Configuración del grid principal (1 fila, 2 columnas)
         self.grid_rowconfigure(0, weight=1)
         self.grid_columnconfigure(1, weight=1)
@@ -140,6 +151,12 @@ class Capital10App(ctk.CTk):
 
         # Mostrar vista inicial (Dashboard)
         self.mostrar_vista("dashboard")
+
+    def _aplicar_icono(self, ruta_icono):
+        try:
+            self.iconbitmap(ruta_icono)
+        except Exception:
+            pass
 
     def _crear_sidebar(self):
         self.sidebar_frame = ctk.CTkFrame(self, width=240, corner_radius=0, fg_color="#0F172A")
